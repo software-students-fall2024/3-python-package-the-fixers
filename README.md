@@ -178,6 +178,109 @@ Mac
 Windows
 Linux 
 
+Prerequisites
+Python: Ensure you have Python 3.8 or higher installed. You can check your Python version with:
+```
+python --version
+```
+or, on some systems:
+
+```
+python3 --version
+```
+Mac: Install Python via Homebrew:
+
+```
+brew install python
+```
+Windows: Download Python from python.org and follow the installation instructions. Make sure to check "Add Python to PATH" during installation.
+
+Linux: Python is often pre-installed. If not, install it via the package manager:
+```
+sudo apt update
+sudo apt install python3
+```
+Git: Install Git to clone the repository.
+
+Mac: Install via Homebrew:
+```
+brew install git
+```
+Windows: Download from git-scm.com and follow the installer instructions.
+Linux: Install via your package manager:
+
+```
+sudo apt install git
+```
+pipenv: Install pipenv to manage dependencies.
+
+```
+pip install pipenv
+```
+
+Step 1: Clone the Repository
+In your terminal or command prompt, clone the repository:
+```
+git clone https://github.com/your-username/3-python-package-the-fixers.git
+cd 3-python-package-the-fixers
+```
+Replace your-username with your actual GitHub username.
+
+Step 2: Set Up Virtual Environment and Install Dependencies
+Create and activate a virtual environment using pipenv:
+
+```
+pipenv install --dev
+```
+This will install the required packages from the Pipfile.
+
+Activate the virtual environment:
+```
+pipenv shell
+```
+Note: If you encounter issues with pipenv, you can alternatively create a virtual environment manually and install dependencies from requirements.txt (if you generate it) or directly from Pipfile requirements.
+
+Step 3: Run the Project
+With the virtual environment activated, you can now run the project.
+
+Running the example program:
+```
+python example_program.py
+```
+This program demonstrates how to use each function in the CodeBreak package.
+
+Running the package interactively: You can also open a Python interpreter and import the package to explore it interactively:
+```
+>>> from codebreak.eye_exercises import eye_exercise
+>>> print(eye_exercise(10))
+```
+Step 4: Run Tests
+The CodeBreak project uses pytest for testing. To run all tests, ensure you’re in the project’s root directory, then run:
+```
+pytest
+```
+If everything is set up correctly, you should see output indicating that all tests have passed.
+
+Platform-Specific Notes
+Mac
+Ensure Homebrew is installed to easily install Python and Git. Use brew install package_name for installing dependencies.
+Activate virtual environments with source venv/bin/activate if using a manual virtual environment setup.
+Windows
+Use pipenv shell to activate the pipenv environment.
+If you encounter issues with pipenv, run python -m venv venv and activate the environment using .\venv\Scripts\activate.
+You may need to install the python command alias for compatibility with some scripts.
+Linux
+Most Linux distributions come with Python pre-installed.
+Use sudo apt install package_name (Debian-based) or sudo yum install package_name (Red Hat-based) to install Git, Python, or other dependencies.
+Troubleshooting
+Virtual Environment Issues: If you encounter issues with pipenv, try updating it or using a manual virtual environment as described above.
+
+Dependency Issues: Ensure all dependencies are installed. If there’s an issue, try reinstalling with:
+```
+pipenv install --dev
+```
+Environment Variables: Missing environment variables may cause runtime errors. Double-check that your .env file is correctly set up.
+
 ## Other
 instructions for how to set up any environment variables and import any starter data into the database, as necessary, for the system to operate correctly when run.
 if there are any "secret" configuration files, such as .env or similar files, that are not included in the version control repository, exact instructions for how to create them and what their contents should be must be supplied to the course admins by the due date.
