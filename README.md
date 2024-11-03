@@ -88,7 +88,7 @@ from codebreak.stretches import stretch_exercise
 print(stretch_exercise(5))
 ```
 Step 3: Example Program
-To see all functions in action, try running the example program on GitHub. This example demonstrates each function in the package and shows how to use them in a Python script.
+To see all functions in action, try running the [example program] (https://github.com/software-students-fall2024/3-python-package-the-fixers/blob/main/example_program.py) on GitHub. This example demonstrates each function in the package and shows how to use them in a Python script.
 
 Here’s an overview of the example_program.py file:
 
